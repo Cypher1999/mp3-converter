@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="first-view" align=center>
+
+    <h1 class="title">Convierte los videos en mp3</h1>
+
+    <p class="description">Busca tu canción en youtube, selecciona el video,
+        copia el url y pegalo en la barra, simplemente presiona descargar y listo.
+    </p>
+
+</div>
+
+<div class="send-info" align="center">
+
+    <form action="/convert" method="POST" id="form">
+
+        <input type="text" name="videoUrl" id="videoUrl" placeholder="Inserte url">
+        <input type="submit" value="descargar" id="submit" >
+
+    </form>
+
+</div>
+
+<div class="server-msg">
+
+    {% with message=get_flashed_messages() %}
+    {% if message %}
+    {% for i in message %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+</div>
+
+{% endblock %}
+
+

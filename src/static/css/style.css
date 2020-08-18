@@ -1,0 +1,62 @@
+:root{
+
+    /*FUENTES*/
+
+    --letter: 'Montserrat', sans-serif;
+    --title: 'Oswald', sans-serif;
+
+    /*COLORES*/
+
+    --red:rgb(131, 26, 26);
+    --black: rgb(10, 10, 10);
+
+}
+
+body{
+
+    background-color: var(--black);
+}
+
+.container{
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav.nav-bar{
+    text-align: center;
+    background:linear-gradient(to top , rgb(58, 10, 10),rgb(139, 18, 18)) ;
+}
+
+nav.nav-bar h1{
+
+    margin:0;
+    color: white ;
+    font-family: var(--title);
+    padding-top: 1%;
+}
+
+nav.nav-bar p{
+
+    font-family: var(--letter);
+    color: white;
+    background-color: rgb(7, 7, 7);
+    padding: 10px;
+    box-shadow: black 2px 2px 2px;
+}
+
+@media screen and (max-width:850px){
+
+
+    nav.nav-bar h1{
+        font-size: 1.5em;
+    }
+
+    nav.nav-bar p{
+    
+        color: white;
+    }
+
+
+}
